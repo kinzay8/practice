@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .bg{
+            height: 440px;
+            width: 1020px;
+            /* border: 1px red solid; */
+            opacity: .2;
+            margin-top: 40px;
+            margin-left: 420px;
+        }
+        #message{
+            position: absolute;
+        }
+        .adiv{
+          position: relative;
+          left: 30px;
+          border-right: 2px solid black;
+          width: 400px;
+          /* line-height: 20px; */          
+        }
+        .bdiv{
+         position: relative;
+         left: 150px;
+         width: 400px;
+        /* line-height: 20px; */
+        }
+        .main{
+            display: flex;
+            /* position: relative;
+            top: 20px; */
+            border: 2px solid black;
+            height: 400px;
+            width: 980px;
+            padding: 20px;
+            margin-left: 255px;
+            margin-top: 30px;
+            font-weight: bold;
+            /* background-color:  cadetblue ; */
+            position: absolute;
+            top: 8px;
+            left: 171px;
+            z-index: 2;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            
+
+         }
+        .location{
+            /* display: inline; */
+            position: relative;
+            top: -35px;
+        }
+        #name{
+            position: relative;
+            left: 23px;
+        }
+        #contact{
+            position: relative;
+            left: 10px;
+        }
+        #password{
+
+        }
+        #address{
+            position: relative;
+            left: 6px;
+        }
+        #mobile{
+            position: relative;
+            left: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <form>
+        <div class="bg"> <img src="images/bg1.webp" alt="" height="100%" width="100%"></div>
+     <div class="main">
+        <div class="adiv">
+         <label for="" class="label">Name:</label>
+        <input type="text" name="" id="name"  placeholder="Enter your name" required maxlength="8" autofocus>
+        <br>
+        <br>
+        <label for="">Email:</label>
+        <input type="email" name="" id="name" placeholder="Enter your email"  required>
+        <br>
+        <br>
+        <label for="">Contact:</label>
+        <input type="number" name="" id="contact" placeholder="Your contact"  required >
+        <br>
+        <br>
+        <label for="">Password:</label>
+        <input type="password" name="" id="password" placeholder="Password"   required>
+        <br>
+        <br>
+        <select>
+            <option>Select City</option>
+            <option value="">Karachi</option>
+            <option value="">Lahore</option>
+        </select>
+        <br>
+        <br>
+      <div >
+      <label for="">Gender:</label>
+      <br>
+      <br>
+      <label for="">Male</label>
+      <input type="radio" name="a">
+      <label for=>Female</label>
+      <input type="radio" name="a">
+      <br>
+      <br>
+      <label for="" >Message: </label>
+      <textarea name="" id="message" cols="23" rows="5" ></textarea>
+    </div>
+    </div>
+    <div class="bdiv">
+        <label for="">Address:</label>
+        <input type="address" name="" id="address"  placeholder="Enter your Address"  required>
+        <br>
+        <br>
+        <label for="" class="location">Location:</label>
+        <textarea name="" id="" cols="21" rows="3" ></textarea>
+        <br>
+        <br>
+        <label for="">Mobile:</label>
+        <input type="mobile" name="" id="mobile"  width="200px">
+        <br>
+        <br>
+        <input type="color">
+        <br>
+        <br>
+        <input type="submit">
+        
+    </div>
+    </div>
+        
+    </form>
+</body>
+</html>

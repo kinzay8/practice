@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Local Storage</title>
+</head>
+<body>
+    <label>Email:</label>
+    <input type="text" name="" id="email">
+    <br><br>
+    <label>Password:</label>
+    <input type="text" name="" id="pass">
+    <br><br>
+    <button type="submit" onclick="fun()">Submit</button>
+    <br><br>
+    <h2>Login</h2>
+    <label>Email:</label>
+    <input type="text" name="" id="e">
+    <br><br>
+    <label>Password:</label>
+    <input type="text" name="" id="p">
+    <br><br>
+    <button type="submit" onclick="login()">Login</button>
+    <br><br>
+    
+
+    <script>
+        function fun(){
+            var email = document.getElementById("email").value;
+            localStorage.setItem("Email",email);
+            var pass = document.getElementById("pass").value;
+            localStorage.setItem("Pass",pass);
+
+            // if(email=="iman@gmail.com"&& pass=="iman123"){
+            //     document.getElementById("login").innerHTML = " ";
+            //     document.getElementById("login").innerHTML = "Successfully Login";
+            // }
+                  
+            // else if(email!="iman@gmail.com" && pass!="iman123"){
+            //     document.getElementById("login").innerHTML = " ";
+            //     document.getElementById("login").innerHTML = "Alert! Email or Password not matched";
+               
+            // }
+
+
+        }
+
+        function login(){
+            var e2 = document.getElementById("e").value;
+            var p2 = document.getElementById("p").value;
+
+            if(e2==localStorage.getItem("Email") && p2==localStorage.getItem("Pass")){
+                alert("Successfully Login");
+            }
+            else if(e2!==localStorage.getItem("Email") && p2!==localStorage.getItem("Pass")){
+                alert("Email or Password is not matched");
+            }
+
+        }
+    </script>
+</body>
+</html>

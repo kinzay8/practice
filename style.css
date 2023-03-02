@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px
+}
+
+.container{
+    width: 70px;
+    margin: 20px auto;
+    min-height: 500px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.colcol-1{
+    height: 20px;
+    width: 40px;
+    min-height: 500px;
+    padding: 10px;
+}
+.label{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.text{
+    width: 500px;
+    padding: 5px 10px;
+    font-size: 24px;
+    margin: 3px 0px;
+    border-radius: 7px;
+    border: 1px solid lightseagreen;
+    margin-bottom: 30px;
+}
+.chk-text{
+    font-size: 18px;
+    color: rgb(169, 118, 118);
+}
+.btn-signup{
+    border: 1px solid black;
+    font-size: 24px;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: steelblue;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+}

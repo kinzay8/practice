@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .main{
+            height: 250px;
+            width: 250px;
+            border: 1px solid black;
+            margin: 30px;
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            line-height: 10;
+            font-weight: bold;
+            
+        }
+        .main1{
+            background-color: aquamarine;
+            position: relative;
+            z-index: 1;
+        }
+        .main2{
+            background-color:darkslateblue;
+            position: relative;
+            top: -200px;
+            left: 150px;
+            z-index: 3;
+            
+        }
+        .main3{
+            background-color:darkolivegreen;
+            position: relative;
+            top: -400px;
+            left: 300px;
+            z-index: 2;
+        }
+        .main4{
+            background-color:darkblue;
+            position: relative;
+            top: -600px;
+            left: 450px;
+            z-index: 4;
+        }
+        .main5{
+            background-color: cornflowerblue;
+            position: relative;
+            top: -800px;
+            left: 600px;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body>
+   <div class="main main1">A</div>
+   <div class="main main2">B</div>
+   <div class="main main3">C</div>
+   <div class="main main4">D</div>
+   <div class="main main5">E</div>
+    
+</body>
+</html>

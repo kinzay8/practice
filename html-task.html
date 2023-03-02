@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <style>
+        *{
+            margin: 0 auto;
+        }
+        /* .nav{
+            height: 80px;
+            background-color:aqua ;
+        } */
+        .pro{
+            /* height: 600px; */
+            /* background-color: brown; */
+            padding: 100px;
+        }
+        .p{
+            height: 300px;
+
+        }
+        .p1{
+            /* background-color:yellowgreen; */
+
+        }
+        /* .p2{
+            background-color: aqua;
+        }
+        .p3{
+            background-color: cadetblue;
+        } */
+        .i1{
+            height: 350px;
+            /* background-color: aqua; */
+        }
+        .bu{
+            background-color: burlywood;
+            height: 40px;
+            width: 60px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .b2{
+           margin-left: 400px;
+        }
+        #price{
+            height: 120px;
+            padding-top: 20px;
+            display: none;
+            color: red;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        .des{
+            height: 200px;
+            width: 480px;
+            margin-left: 100px;
+            margin-top: 80px;
+            /* background-color: aqua; */
+            padding: 30px;
+            border-radius: 10px;
+            display: none;
+            background-color:tan;
+            /* display: flex;
+            justify-content: center; */
+        }
+        h1{
+            text-align: center;
+        }
+        .para{
+            font-size: 20px;
+        }
+        .img{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <!-- <head>
+        <div class="nav">
+            <ul class="ul"></ul>
+        </div>
+    </head> -->
+    <section>
+        <div class="pro">
+        <div class="p p1">
+            <div class="i1"><img class="img" src="images/per1.avif" alt="" height="350px"></div>
+            <br><br>
+            <div class="buttons">
+                <button onclick="pr()" type="submit" class="bu">Price</button>
+                <button onclick="des()" type="submit" class="bu b2">Info</button>
+            </div>
+            <div  id="price"><p>Rs.3000</p></div>
+
+        
+            <!-- <div class="i2"></div>
+            <div class="i3"></div> -->
+        </div>
+        <!-- <div class="p p2"></div>
+        <div class="p p3"></div> -->
+    </div>
+    
+</section>
+    
+   </div> 
+   <div id="des" class="des">
+    <h1>AT DAWN</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit esse maxime obcaecati facere dicta suscipit sint cumque culpa
+         totam magni numquam itaque eius accusamus aperiam, impedit ipsa voluptates quo?</p>
+
+</div>
+   
+   <script>
+    function pr(){
+        var p = document.getElementById("price").value;
+        document.getElementById("price").style.display = 'block';
+
+    }
+    function des(){
+        var d = document.getElementById("des").value;
+        document.getElementById("des").style.display = 'block';
+    }
+   </script>
+</body>
+</html>

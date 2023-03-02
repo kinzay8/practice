@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+</head>
+<body>
+    <label for="">Email:</label>
+    <input type="text"  id="email">
+    <br>
+    <br>
+    <label for="">Pasward:</label>
+    <input type="text" id="pass">
+    <br>
+    <br>
+    <button type="submit" onclick="fun()">Submit</button>
+    <br>
+    <br>
+    <h2>Login in</h2>
+
+    <label for="">Email:</label>
+    <input type="text"  id="e">
+    <br>
+    <br>
+    <label for="">Pasward:</label>
+    <input type="text" id="p">
+    <br>
+    <br>
+    <button type="store" onclick="login()">Submit</button>
+    <br>
+    <br>
+
+
+    <script>
+        function fun(){
+            var email=document.getElementById("email").value;
+            localStorage.setItem("email",email);
+            var pass=document.getElementById("pass").value;
+            localStorage.setItem("pass",pass);
+
+        }    
+        function login(){
+            var e2=document.getElementById("e").value;
+            var p2=document.getElementById("p").value;
+
+            if(e2==localstorage.getItem("email")&& p2==localStorage.getItem("pass")){
+                alret("successful login");
+            }
+            else if(e2!==localStorage.getItem("email") && p2!==localStorage.getItem("pass"){
+                alert("email and passward was incorrect");
+            })
+            }   
+
+     
+    </script>
+    
+</body>
+</html>
